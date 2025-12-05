@@ -191,7 +191,7 @@
         </div>
 
         <!-- Wildfire Research -->
-        <div class="experience-card">
+        <div class="experience-card wildfire-card">
           <div class="exp-badge wildfire">
             <i class="fas fa-fire"></i>
           </div>
@@ -204,26 +204,42 @@
                 <i class="fas fa-map-marker-alt"></i> San Marcos, TX
               </span>
             </div>
+            
+            <!-- Wildfire Research Video -->
+            <div class="exp-video">
+              <a href="https://github.com/samrakshanadhikari/Wildfire-prediction" target="_blank" class="video-thumbnail wildfire-preview">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/2020_California_wildfires_GOES-17.gif/800px-2020_California_wildfires_GOES-17.gif" alt="California Wildfires Satellite View">
+                <div class="play-button wildfire-btn">
+                  <i class="fab fa-github"></i>
+                </div>
+                <span class="video-label">View Full Research on GitHub</span>
+              </a>
+            </div>
+            
             <p class="exp-description">
-              Developing machine learning pipelines for wildfire susceptibility mapping using deep learning and remote sensing data.
+              Developing a deep learning pipeline for wildfire ignition risk modeling in California using multi-source remote sensing data (MODIS, GRIDMET, NLCD) and event-based cross-validation.
             </p>
             <ul class="exp-highlights">
-              <li>Organized and cleaned large-scale geospatial datasets (50+ events) of California, ensuring metadata consistency for reproducible ML workflows</li>
-              <li>Developed wildfire susceptibility mapping pipeline using <strong>U-Net</strong>, remote sensing data (MODIS, GRIDMET, NLCD), and PyTorch</li>
-              <li>Implemented balanced sampling, metadata-driven preprocessing, and threshold tuning to improve fairness and IoU</li>
-              <li>Produced interpretable probability maps by overlaying environmental variables for real-world decision-making</li>
-              <li>Scaled pipeline with <strong>Docker + GitHub Actions</strong>, enabling reproducibility and production-readiness</li>
+              <li>Built <strong>U-Net segmentation model</strong> for pixel-level burn probability prediction across 50+ California wildfire events (2000-2025)</li>
+              <li>Processed environmental data via <strong>Google Earth Engine</strong>: climate (GRIDMET), vegetation (NDVI), drought (PDSI), topography (SRTM)</li>
+              <li>Implemented <strong>leave-one-event-out cross-validation</strong> to test true generalization to unseen wildfires</li>
+              <li>Achieved interpretable probability maps with confusion visualization (TP/FP/FN analysis)</li>
+              <li>Scaled pipeline with <strong>Docker + GitHub Actions</strong> for reproducibility and production-readiness</li>
             </ul>
             <div class="exp-tech">
               <span>U-Net</span>
               <span>PyTorch</span>
+              <span>Google Earth Engine</span>
+              <span>MODIS</span>
               <span>Remote Sensing</span>
               <span>Docker</span>
-              <span>Google Earth Engine</span>
             </div>
             <div class="exp-links">
               <a href="https://github.com/samrakshanadhikari/Wildfire-prediction" target="_blank" class="btn btn-small">
                 <i class="fab fa-github"></i> Source Code
+              </a>
+              <a href="https://github.com/samrakshanadhikari/Wildfire-prediction/blob/main/wildfire_model_fixed_clean_github.ipynb" target="_blank" class="btn btn-small btn-outline">
+                <i class="fas fa-book"></i> View Notebook
               </a>
             </div>
           </div>
