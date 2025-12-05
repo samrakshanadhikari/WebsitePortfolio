@@ -296,27 +296,15 @@
         <h2 class="section-title">Featured Projects</h2>
       </div>
 
-      <!-- Research Video -->
+      <!-- Medical Research Video -->
       <div class="project-card featured">
         <div class="project-media">
-          <!-- Video thumbnail with play button (works locally) -->
-          <a href="https://www.youtube.com/watch?v=FqsvgFTQv8w" target="_blank" class="video-thumbnail" id="videoThumbnail">
-            <img src="https://img.youtube.com/vi/FqsvgFTQv8w/maxresdefault.jpg" alt="Research Video Thumbnail">
-            <div class="play-button">
-              <i class="fas fa-play"></i>
-            </div>
-            <span class="video-label">Click to Watch on YouTube</span>
-          </a>
-          <!-- Embedded video (works when hosted) -->
           <iframe 
-            id="youtubeEmbed"
-            src="https://www.youtube.com/embed/FqsvgFTQv8w?si=Uq_eYGP-BHC9ZqU2&origin=https://samrakshanadhikari.github.io" 
-            title="Research Video" 
+            src="https://www.youtube.com/embed/FqsvgFTQv8w" 
+            title="Medical Diagnosis Research" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            loading="lazy">
+            allowfullscreen>
           </iframe>
         </div>
         <div class="project-info">
@@ -343,21 +331,12 @@
       <!-- Wildfire Research Video -->
       <div class="project-card featured wildfire-featured">
         <div class="project-media">
-          <a href="https://www.youtube.com/watch?v=yXX0UNa2XZU" target="_blank" class="video-thumbnail" id="wildfireThumbnail">
-            <img src="https://img.youtube.com/vi/yXX0UNa2XZU/maxresdefault.jpg" alt="Wildfire Research Video Thumbnail">
-            <div class="play-button wildfire-play">
-              <i class="fas fa-play"></i>
-            </div>
-            <span class="video-label">Click to Watch on YouTube</span>
-          </a>
           <iframe 
             src="https://www.youtube.com/embed/yXX0UNa2XZU" 
             title="Wildfire Prediction Research" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-            loading="lazy">
+            allowfullscreen>
           </iframe>
         </div>
         <div class="project-info">
@@ -778,13 +757,6 @@
     }
     setInterval(changeImage, 5000);
 
-    // Detect if running locally (file:// protocol) and show thumbnail instead of iframe
-    if (window.location.protocol === 'file:') {
-      const projectMedia = document.querySelector('.project-media');
-      if (projectMedia) {
-        projectMedia.classList.add('show-thumbnail');
-      }
-    }
   </script>
 </body>
 </html>
